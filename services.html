@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Services</title>
+</head>
+    <body>
+    <nav class="nav1">
+         
+        <i class="fas fa-bars" id="menu-icon"></i>
+        <ul id="menu" class="hidden">
+            <li><a href="home.html">HomePage</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="contact.html">ContactUs</a></li>
+        </ul>
+        <i class="fas fa-phone-alt"></i>
+        <i class="fab fa-facebook fa-2x"></i>
+        <i class="fab fa-twitter fa-2x"></i>
+        <i class="fab fa-instagram fa-2x"></i>
+        <i class="fab fa-whatsapp fa-2x"></i> 
+        <a href="#" id="brand-name"><b>TechnoMod</b></a>
+       </nav> 
+      
+       <nav class="nav2">
+        <a href="home.html"><b>HomePage</b></a>
+        <a href="services.html"><b>Services</b>
+        </a>
+        <a href="contact.html"><b>ContactUs</b></a>
+        <i class="fas fa-map-marker-alt" id="map">  123Dubai,UAE</i>
+       </nav></br>
+       
+        <div class="right1">
+            <h3> TecnoMod Services</h3><hr>
+        <p>Technomod always seeks to provide distinguished services and flexible packages to suit most services used for information technology at very competitive prices, whether websites, stores, applications or software systems.
+            Start growing your business now and launch your real and effective presence online.</p></br>
+        </div>
+            <div class="services">
+                <button type="submit" id="request" onclick="openModal('web-hosting')">Web hosting</button> 
+                <button type="submit" id="request" onclick="openModal('private-servers')">Private servers</button> 
+                <button type="submit" id="request" onclick="openModal('vps-servers')">VPS servers</button> 
+                <button type="submit" id="request" onclick="openModal('website-design')">Website design</button>
+               
+                <button type="submit" id="request" onclick="openModal('mobile-applications')">Mobile applications</button> 
+                
+                <button type="submit" id="request" onclick="openModal('visual-identity')">Visual identity</button> 
+            </div>
+        
+    
+        <div id="modal" class="modal">
+            <div class="modal-content">
+                <span class="close-btn" onclick="closeModal()">&times;</span>
+                <h2 id="modal-title">Service Title</h2>
+                <p id="modal-description">Description of the service will be displayed here.</p>
+            </div>
+        </div>
+    
+
+   <script>
+     function openModal(service) {
+            const modal = document.getElementById('modal');
+            const title = document.getElementById('modal-title');
+            const description = document.getElementById('modal-description');
+        
+            switch (service) {
+                case 'web-hosting':
+                    title.innerHTML = 'Web Hosting';
+                    description.innerHTML = 'Web hosting allows you to store your website files on a server so that others can access them via the internet.';
+                    break;
+                case 'private-servers':
+                    title.innerHTML = 'Private Servers';
+                    description.innerHTML = 'Private servers are dedicated to a single client, providing more security and performance for hosting needs.';
+                    break;
+                case 'vps-servers':
+                    title.innerHTML = 'VPS Servers';
+                    description.innerHTML = 'VPS (Virtual Private Server) allows you to host your website or applications with guaranteed resources and more control.';
+                    break;
+                case 'website-design':
+                    title.innerHTML = 'Website Design';
+                    description.innerHTML = 'Website design focuses on creating the layout, structure, and aesthetics of a website to ensure it is user-friendly and visually appealing.';
+                    break;
+                case 'e-commerce':
+                    title.innerHTML = 'E-commerce';
+                    description.innerHTML = 'E-commerce refers to online stores that allow you to sell products and services, reaching a global market.';
+                    break;
+                case 'mobile-applications':
+                    title.innerHTML = 'Mobile Applications';
+                    description.innerHTML = 'Mobile apps are software applications designed for mobile devices like smartphones and tablets, improving user engagement.';
+                    break;
+                case 'e-marketing':
+                    title.innerHTML = 'E-Marketing';
+                    description.innerHTML = 'E-marketing uses digital platforms such as social media, SEO, and email marketing to promote products and services.';
+                    break;
+                case 'visual-identity':
+                    title.innerHTML = 'Visual Identity';
+                    description.innerHTML = 'Visual identity refers to the elements that define a brand, such as logos, colors, and typography.';
+                    break;
+                default:
+                    title.innerHTML = 'Unknown Service';
+                    description.innerHTML = 'Description not available.';}
+
+                    modal.style.display = 'block';
+            }
+
+            function closeModal() {
+            const modal = document.getElementById('modal');
+            modal.style.display = 'none';
+        }
+        document.getElementById("menu-icon").addEventListener("click", function() {
+    const menu = document.getElementById("menu");
+    if (menu.classList.contains("hidden")) {
+        menu.classList.remove("hidden");
+        menu.classList.add("visible");
+    } else {
+        menu.classList.remove("visible");
+        menu.classList.add("hidden");
+    }
+});
+
+   </script>
+</body>
+
+</html>

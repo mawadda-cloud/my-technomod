@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Contact</title>
+</head>
+<body>
+    <nav class="nav1">
+         
+        <i class="fas fa-bars" id="menu-icon"></i>
+        <ul id="menu" class="hidden">
+            <li><a href="home.html">HomePage</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="contact.html">ContactUs</a></li>
+        </ul>
+        <i class="fas fa-phone-alt"></i>
+        <i class="fab fa-facebook fa-2x"></i>
+        <i class="fab fa-twitter fa-2x"></i>
+        <i class="fab fa-instagram fa-2x"></i>
+        <i class="fab fa-whatsapp fa-2x"></i> 
+        <a href="#" id="brand-name"><b>TechnoMod</b></a>
+       </nav> 
+      
+       <nav class="nav2">
+        <a href="home.html"><b>HomePage</b></a>
+        <a href="services.html"><b>Services</b>
+        </a>
+        <a href="contact.html"><b>ContactUs</b></a>
+        <i class="fas fa-map-marker-alt" id="map">123Dubai,UAE</i>
+       </nav></br>
+
+    <div class="contact">
+   <div class="img">
+    <h3>GET IN TOUCH</h3>
+    <h1>Contact Information</h1>
+    <ul>
+        <li><i class="fas fa-phone-alt"></i>(555)978-5643</li>
+        <li><i class="fas fa-envelope"></i>info@technomod.com</li>
+        <li><i class="fas fa-map-marker-alt"></i>123Dubai,UAE</li>
+        <li><i class="fas fa-clock"></i>Daily: 11:00am - 10:00pm</li>
+    </ul>
+   </div>
+       <div class="form">
+        <h3>GET IN TOUCH</h3>
+        <h1>CONTACT WITH TechnoMod</h1>
+        <hr>
+           <h2>tell us your message <button type="submit" id="submit">submit</button></h2> 
+           <form>
+             <input class="name" type="text" placeholder="Enter your name" id="input">
+             <input class="email" type="email" placeholder="Enter your email" id="input">
+             <textarea class="message" placeholder="Enter your message" id="input"></textarea>
+           </form></br>
+        </div>
+</div>
+    
+<script>
+    document.getElementById("menu-icon").addEventListener("click", function() {
+        const menu = document.getElementById("menu");
+        if (menu.classList.contains("hidden")) {
+            menu.classList.remove("hidden");
+            menu.classList.add("visible");
+        } else {
+            menu.classList.remove("visible");
+            menu.classList.add("hidden");
+        }
+    });
+    
+    </script>
+</body>
+
+</html>

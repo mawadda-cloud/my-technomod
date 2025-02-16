@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <title>HomePage</title>
+</head>
+<body>
+    <nav class="nav1">
+         
+        <i class="fas fa-bars" id="menu-icon"></i>
+        <ul id="menu" class="hidden">
+            <li><a href="home.html">HomePage</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="contact.html">ContactUs</a></li>
+        </ul>
+        <i class="fas fa-phone-alt"></i>
+        <i class="fab fa-facebook fa-2x"></i>
+        <i class="fab fa-twitter fa-2x"></i>
+        <i class="fab fa-instagram fa-2x"></i>
+        <i class="fab fa-whatsapp fa-2x"></i> 
+        <a href="#" id="brand-name"><b>TechnoMod</b></a>
+       </nav> 
+      
+       <nav class="nav2">
+        <a href="home.html"><b>HomePage</b></a>
+        <a href="services.html"><b>Services</b>
+        </a>
+        <a href="contact.html"><b>ContactUs</b></a>
+        <i class="fas fa-map-marker-alt" id="map">  123Dubai,UAE</i>
+       </nav></br>
+      
+<div class="text">
+   <div class="right">
+    <h3>Welcome to TechnoMod</h3><hr>
+    <p>Innovative Technology Solutions Tailored for Your Business.</p> 
+    <p> At TecnoMod, we specialize in delivering cutting-edge technology solutions to drive your business forward. 
+ With a focus on innovation, efficiency, and customization, we are committed to helping our clients achieve their goals in a rapidly evolving digital landscape.
+        </p>
+    </div></br></br>
+   <div class="request">
+    <button type="submit" id="request">Request a service</button> </br></br>
+    <button type="submit" id="request">Offers!!</button>
+   </div></div>
+   
+
+
+
+<script>
+document.getElementById("menu-icon").addEventListener("click", function() {
+    const menu = document.getElementById("menu");
+    if (menu.classList.contains("hidden")) {
+        menu.classList.remove("hidden");
+        menu.classList.add("visible");
+    } else {
+        menu.classList.remove("visible");
+        menu.classList.add("hidden");
+    }
+});
+
+</script>
+</body>
+ 
+</html>
